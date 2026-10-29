@@ -9,7 +9,6 @@ function loadSessions() {
 function saveSessions(sessions) {
     localStorage.setItem("studylog-sessions", JSON.stringify(sessions));
 }
-
 const form = document.getElementById("session-form");
 
 if (form !== null) {
