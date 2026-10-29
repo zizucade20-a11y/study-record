@@ -23,3 +23,12 @@ if (form !== null) {
             date: document.getElementById("date").value,
             note: document.getElementById("note").value
         };
+
+         const sessions = loadSessions();
+        sessions.push(session);
+        saveSessions(sessions);
+
+        form.reset();
+        alert("Session saved!");
+    });
+}
