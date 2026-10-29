@@ -29,6 +29,7 @@ nav {
     gap: 32px;
     padding: 28px 56px;
 }
+
 nav::before {
     content: "StudyLog";
     margin-right: auto;
@@ -212,57 +213,3 @@ table {
     margin: 0 56px 48px;
     border-collapse: separate;
     border-spacing: 0;
-    background: #fffdf7;
-    border: 1px solid #d9d0bd;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 14px 20px;
-    text-align: left;
-    border-bottom: 1px solid #d9d0bd;
-}
-
-th {
-    border-bottom: 2px solid #1a1a1a;
-}
-
-tr:last-child td {
-    border-bottom: 0;
-}
-
-/* Small screens */
-@media (max-width: 700px) {
-    nav {
-        flex-wrap: wrap;
-        padding: 20px 24px;
-        gap: 16px;
-    }
-
-    main {
-        padding: 0 24px 48px;
-    }
-
-    body.cream h1,
-    h2 {
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
-    form,
-    #stats {
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
-    #stats {
-        flex-direction: column;
-    }
-
-    table {
-        width: calc(100% - 48px);
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-}

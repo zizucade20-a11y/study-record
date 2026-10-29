@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>study record- Log a session</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Study record- Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="cream">
     <nav>
         <a href="index.html">Home</a>
@@ -18,27 +17,28 @@
 
     <section id="stats">
         <div>
-            <p>Total minutes</p>>
-             <p id="total-minutes">0</p>
+            <p>Total minutes</p>
+            <p id="total-minutes">0</p>
         </div>
         <div>
             <p>Sessions</p>
             <p id="session-count">0</p>
         </div>
     </section>
-<h2>Recent sessions</h2>
-<taple>
-    <thead>
-        <tr>
-            <th>Date</th>
+
+    <h2>Recent sessions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
                 <th>Subject</th>
                 <th>Minutes</th>
                 <th>Note</th>
-        </tr>
-    </thead>
-</taple>
-    <script src="js/script.js"></script>
+            </tr>
+        </thead>
+        <tbody id="sessions-body"></tbody>
+    </table>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
