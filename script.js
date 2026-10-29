@@ -32,6 +32,7 @@ if (form !== null) {
         alert("Session saved!");
     });
 }
+
 const totalMinutes = document.getElementById("total-minutes");
 const sessionCount = document.getElementById("session-count");
 
@@ -45,4 +46,20 @@ if (totalMinutes !== null) {
 
     totalMinutes.textContent = total;
     sessionCount.textContent = sessions.length;
+
+    const tableBody = document.getElementById("sessions-body");
+    const recent = sessions.slice().reverse().slice(0, 10);
+
+    for (const session of recent) {
+        const row = document.createElement("tr");
+        const values = [session.date, session.subject, session.minutes, session.note];
+
+        for (const value of values) {
+            const cell = document.createElement("td");
+            cell.textContent = value;
+            row.appendChild(cell);
+        }
+
+        tableBody.appendChild(row);
+    }
 }
